@@ -8,8 +8,9 @@
  * Controller of the intelliroadsApp
  */
 angular.module('intelliroadsApp')
-  .controller('HighwaysCtrl', function ($scope) {
-    $scope.highways = [
-      { _id: "IB" }
-    ];
-  });
+  .controller('HighwaysCtrl', ['$scope', 'Highways', function ($scope, Highways) {
+    Highways.getList()
+      .then(function (highways) {
+        $scope.highways = highways;
+      });
+  }]);
