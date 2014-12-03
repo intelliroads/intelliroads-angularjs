@@ -13,5 +13,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ]);
+    'ngTouch',
+    'restangular'
+  ])
+  .config(function (RestangularProvider) {
+    RestangularProvider.setBaseUrl('http://api.intelliroads.local:3000');
+  });
