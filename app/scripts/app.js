@@ -26,6 +26,10 @@ angular
         templateUrl: 'views/highways.html',
         controller: 'HighwaysCtrl'
       })
+      .when('/highways/:id', {
+        templateUrl: 'views/highway_detail.html',
+        controller: 'HighwayDetailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
