@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name intelliroadsAngularjsApp
+ * @name intelliroadsApp
  * @description
- * # intelliroadsAngularjsApp
+ * # intelliroadsApp
  *
  * Main module of the application.
  */
 angular
-  .module('intelliroadsAngularjsApp', [
+  .module('intelliroadsApp', [
     'ngResource',
     'ngRoute',
     'ngSanitize',
