@@ -77,3 +77,9 @@ body {
     border-bottom: 0;
   }
 }
+
+.list-group-item .fa-chevron-right {
+  float: right;
+  margin-top: 7px;
+  margin-right: -5px;
+}

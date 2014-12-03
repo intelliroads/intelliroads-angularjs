@@ -1,7 +1,9 @@
+<h1>Highways</h1>
 <div class="list-group">
   <div ng-repeat="highway in highways">
     <a href="/highways/{{ highway._id }}" class="list-group-item">
       {{ highway._id }}
+      <span class="fa fa-chevron-right"></span>
     </a>
   </div>
 </div>
